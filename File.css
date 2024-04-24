@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: .3s ease;
+ 
+ }
+ 
+ :root {
+    --bgclr: #000;
+    --secondBgClr: #222;
+    --clr: #e91e62;
+    --fontclr: #fff;
+    --paraClr: #eee;
+ }
+ 
+ h1,
+ h4,
+ h2,
+ a,
+ ::placeholder {
+    text-transform: capitalize;
+ }
+ 
+ h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+ }
+ 
+ span {
+    color: var(--clr);
+ }
+ 
+ input {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+ 
+ }
+ 
+ section {
+    padding: 6%;
+ }
+ 
+ .heading {
+    text-align: center;
+    font-size: 40px;
+    color: var(--fontclr);
+    margin-bottom: 40px;
+ }
+ 
+ 
+ body {
+    height: 100vh;
+    background-color: var(--bgclr);
+    background-image: "https://wallpapercave.com/wp/wp7453603.jpg";
+ }
+ 
+ header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 15px 5%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+ }
+ 
+ header .logo {
+    color: var(--fontclr);
+    animation: slideRight 1s ease forwards;
+       opacity: 0;
+    
+ }
+ 
+ 
+ header nav a {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px 14px;
+    color: var(--fontclr);
+    animation: slideTop .5s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.1s * var(--i));
+ }
+ 
+ header nav a:focus {
+    background-color: var(--clr);
+    border-radius: 20px;
+ }
+ 
+ header .fa-bars {
+    padding: 8px 15px;
+    background-color: var(--fontclr);
+    font-size: 26px;
+    color: var(--bgclr);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 6px;
+    display: none;
+ }
+ 
+ /------------------------------ stsrt section home-----------------------------------/
+ .Home {
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+ }
+ 
+ .Home .home_content h1 {
+    color: var(--fontclr);
+    font-size: 50px;
+    animation: slideBottom 1s ease forwards;
+       animation-delay: 1s;
+       opacity: 0;
+ }
+ 
+ 
+ .home_content p {
+    color: var(--paraClr);
+    margin: 20px 0 30px;
+    animation: slideLeft 1s ease forwards;
+       animation-delay: 1s;
+       opacity: 0;
+ }
+ 
+ .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--clr);
+    font-size: 20px;
+    color: var(--fontclr);
+    font-weight: 700;
+    
+ 
+ }
+ 
+ .btn:hover {
+    transform: scale(.95);
+ }
+ 
+ 
+ .Home img {
+    height: 150px;
+    animation: slidescel 1s ease forwards;
+       animation-delay: 1s;
+       opacity: 0;
+ }
+ 
+ /-------------------------------- strat section about-----------------------------------/
+ .about {
+    position: relative;
+    background-color: var(--secondBgClr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+ }
+ 
+ .about .about_content .heading {
+    margin-bottom: 5px;
+    text-align: left;
+    animation: slideLeft 1s ease forwards;
+       animation-delay: 1s;
+       opacity: 0;
+ }
+ 
+ .about .about_content h4 {
+    font-size: 30px;
+    color: var(--clr);
+    letter-spacing: 1px;
+ }
+ 
+ .about .about_content p {
+    color: var(--paraClr);
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 20px 0;
+ }
+ 
+ .about img {
+    height: 150px;
+ 
+ }
+ 
+ /-----------------------start section service----------------------------/
+ .service {
+    background-color: var(--bgclr);
+    color: #fff;
+ }
+ 
+ .service .service_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+ }
+ 
+ .service .service_container .service_box {
+    flex: 1 1 200px;
+    text-align: center;
+    background-color: #222;
+    padding: 30px 20px;
+    border-radius: 10px;
+      border: solid 3px transparent;
+      
+    }
+    
+    .service .service_container .service_box:hover {
+    border: solid 3px #e91e62;
+    transform: scale(1.1);
+ 
+    
+ }
+ 
+ .service .service_container .service_box i {
+    font-size: 35px;
+    color: var(--clr);
+    text-shadow: 0 0 10px var(--clr);
+ }
+ 
+ .service .service_container .service_box h2 {
+    margin: 8px 0;
+ }
+ 
+ .service .service_container .service_box p {
+    margin: 8px 0 8px;
+ }
+ 
+ /------------------------Eduction---------------------------------------------------------/ 
+ #eduction{
+   display: flex;
+   flex-direction: ;
+   background-color:black;
+ }
+ #eduction h1{
+   margin: ;
+ }
+ .columns{
+   display: grid;
+   grid-template-columns: ;
+   padding-left: ;
+ }
+.-box{
+   height: ;
+   width: x;
+   background-color:rgba;
+   border-radius: ;
+   margin: ;
+}
+.box h2{
+   color: yellowgreen;
+   margin-bottom: ;
+}
+.box p{
+   color: white;
+   font-size: ;
+
+}
+ /-------------------------start section contact--------------------------------------------/
+ .contat {
+    color: #000;
+ }
+ 
+ .contat form {
+    max-width: 600px;
+    position: relative;
+    margin: 1rem auto;
+    text-align: center;
+ }
+ 
+ .contat .input-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ 
+ .contat .input-box input,
+ .contat textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #222;
+    margin: 10px 0;
+    color: var(--fontclr);
+ }
+ 
+ .contat textarea {
+    resize: none;
+    outline: none;
+ }
+ 
+ .contat .input-box input {
+    width: 49%;
+ }
+ 
+ .contat input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #e91e62;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 0 20px #e91e62;
+    cursor: pointer;
+ 
+ }
+ 
+ 
+ /===================now responsive Design======================/
+ @media(max-width:808px) {
+    .Home {
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       margin: 50px 0;
+    }
+ 
+    .Home img {
+       margin-top: 15px;
+    }
+ 
+    .about {
+       text-align: center;
+    }
+ 
+    .about .about_content .heading {
+       text-align: center;
+    }
+ }
+ 
+ @media(max-width:768px) {
+    nav {
+       position: absolute;
+       top: 90%;
+       left: 0;
+       right: 0;
+       background-color: #000;
+       padding: 20px;
+    }
+ 
+    nav a {
+       display: block;
+       text-align: center;
+    }
+ 
+    header .fa-bars {
+       display: block;
+    }
+ 
+ }
+ 
+ @media(max-width:568px) {
+ 
+    .Home .home_content h1 {
+       color: var(--fontclr);
+       font-size: 40px;
+    }
+ 
+    .Home img {
+       height: 300px;
+    }
+ 
+    .about img {
+       height: 300px;
+ 
+    }
+ 
+    .heading {
+       text-align: center;
+       font-size: 35px;
+       color: var(--fontclr);
+       margin-bottom: 40px;
+    }
+ 
+ }
+ 
+ nav.active {
+    display: none;
+ }
+ /*----------------- animation--------------- */
+ @keyframes slideRight {
+    0% {
+       transform: translateX(-100px);
+       opacity: 0;
+    }
+ 
+    100% {
+       transform: translateX(0px);
+       opacity: 1;
+    }
+ }
+ 
+ @keyframes slideTop {
+    0% {
+       transform: translatey(100px);
+       opacity: 0;
+    }
+ 
+    100% {
+       transform: translatey(0px);
+       opacity: 1;
+    }
+ }
+ 
+ @keyframes slideBottom {
+    0% {
+       transform: translatey(100px);
+       opacity: 0;
+    }
+ 
+    100% {
+       transform: translatey(0px);
+       opacity: 1;
+    }
+ }
+ 
+ @keyframes slideLeft {
+    0% {
+       transform: translatex(-100px);
+       opacity: 0;
+    }
+ 
+    100% {
+       transform: translatex(0px);
+       opacity: 1;
+    }
+ }
+ @keyframes slidescel {
+    0% {
+       transform: scale(0);
+       opacity: 0;
+    }
+ 
+    100% {
+       transform: scale(1);
+       opacity: 1;
+    }
+ }
+ 
